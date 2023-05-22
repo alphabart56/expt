@@ -44,7 +44,7 @@ body{
     font-family: 'Hei_W7', sans-serif; /* 字體為 Adobe 明體 Std L，若無法使用則使用 sans-serif 作為後備字體 */
     transform: scaleX(1) scaleY(1);
 }
-@media (max-width: 1335px){
+@media (max-width: 1200px){
     .main_space{
         width: 100%;
     }
