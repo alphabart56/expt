@@ -35,13 +35,13 @@ body{
     font-size: 12px; /* 字級大小為 16pt */
     letter-spacing: 6px; /* 字間距為 16pt */
     color: #1E1E1E; /* 字體顏色為黑色 */
-    font-family: '華康明體W7', sans-serif; /* 字體為 Adobe 明體 Std L，若無法使用則使用 sans-serif 作為後備字體 */
+    font-family: 'Ming-W7', sans-serif; /* 字體為 Adobe 明體 Std L，若無法使用則使用 sans-serif 作為後備字體 */
     transform: scaleX(1) scaleY(1.4);
 }
 .list_text_EN {
     font-size: 11px; /* 字級大小為 16pt */
     color: #A2CE00; /* 字體顏色為黑色 */
-    font-family: '華康黑體W7', sans-serif; /* 字體為 Adobe 明體 Std L，若無法使用則使用 sans-serif 作為後備字體 */
+    font-family: 'Hei-W7', sans-serif; /* 字體為 Adobe 明體 Std L，若無法使用則使用 sans-serif 作為後備字體 */
     transform: scaleX(1) scaleY(1);
 }
 @media (max-width: 1335px){
@@ -53,10 +53,10 @@ body{
     }
 }
 @font-face {
-    font-family: '華康明體W7';
+    font-family: 'Ming-W7';
     src: url('font/DFMingStd-W7.otf') format('opentype');
 }
 @font-face {
-    font-family: '華康黑體W7';
+    font-family: 'Hei-W7';
     src: url('font/DFLiHeiStd-W7.otf') format('opentype');
 }
