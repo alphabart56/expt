@@ -3,226 +3,124 @@ body{
     padding: 0 auto;
     background-color: #EFEFEF;
 }
-.main_space_style{
-    width: 1000px;
-    height: 1500px;
+
+#main_space{
     margin: 0 auto;
     padding: 0 auto;
+    width: 100%;
+    /* background-color: bisque; */
 }
-.top_space_style{
+
+#top_space{
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+#title{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 18pt;
+    font-family: 'Minion', sans-serif;
+    /* transform: scaleX(1) scaleY(1.2); */
+}
+
+#headline_space{
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 92.5%;
+    height: 0px;
+    display: flex;
+    background-color: orange;
+}
+
+#article_space{
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-top: 50px;
+    width: 90%;
+    /* background-color: blue; */
+}
+
+.article{
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+    /* height: 350px; */
+}
+
+.article_pic{
+    margin: 0 auto;
+    padding: 0 auto;
     width: 100%;
     height: 200px;
+    border-radius: 7.5px;
+    object-fit: cover;
+    /* background-color: greenyellow; */
+}
+
+.article_topic{
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 0 auto;
+    width: 100%;
+    font-size: 14pt;
+    font-family: 'Ming_W7', sans-serif;
+}
+
+.article_intro{
     margin: 0 auto;
     padding: 0 auto;
-    display: flex;
-    justify-content: center; /* 水平置中 */
-    align-items: center; /* 垂直置中 */
-}
-.headline_space_style{
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 100%;
-    height: 600px;
+    font-size: 10pt;
+    font-family: 'Ming_W5', sans-serif;
+    color: rgb(100, 100, 100);
+    line-height: 18pt;
+}
+
+.article_date{
     margin: 0 auto;
     padding: 0 auto;
-    display: flex;
-    border-radius: 50px;
-    overflow: hidden;
-}
-#headline_img_box_left{
-    width: calc(100% / 3);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-#headline_img_box_center{
-    width: calc(100% / 3);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-#headline_img_box_right{
-    width: calc(100% / 3);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-.headline_img_filter{
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 100%;
-    height: 100%;
-    scale: 105%;
-    object-fit: cover;
-    filter: brightness(100%) grayscale(0%);
-    transition: filter 0.5s ease, scale 0.5s ease;;
+    font-size: 10pt;
+    font-family: 'Ming_W5', sans-serif;
+    color: rgb(100, 100, 100);
 }
-.headline_img_filter2{
-    width: 100%;
-    height: 100%;
-    scale: 103%;
-    object-fit: cover;
-    filter: brightness(60%) grayscale(100%) blur(3px);
-    transition: filter 0.5s ease, scale 0.5s ease; 
-}
-.headline_text_filter{
-    opacity: 0%;
-    transition: opacity 0.5s ease;
-}
-.headline_text_filter2 {
-    opacity: 100%;
-    transition: opacity 1s ease;
-    transition-delay: 0.25s; /* 延迟2秒后开始过渡 */
-  }
-.headline_textbox{
-    width: 80%;
-    height: 40%;
-    position: absolute;
-    top: 46%;
-    left: 10%;
-    /* background-color: #A2CE00; */
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden; /* 超出容器部分隐藏 */
-    text-overflow: ellipsis; /* 超出部分用省略号表示 */
-}
-.headline_text_date {
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-    margin: 0px 0px 5px 0px;
-    line-height: 1.1;
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    font-family: 'Ming_W7', sans-serif; /*若無法使用則使用 sans-serif 作為後備字體 */
-    transform: scaleX(1) scaleY(1.15);
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25));
-    user-select: none;
-}
-.headline_text_title {
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-    margin: 0px 0px 15px 0px;
-    line-height: 1.2;
-    font-size: 17px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    font-family: 'Ming_W9', sans-serif; /*若無法使用則使用 sans-serif 作為後備字體 */
-    transform: scaleX(1) scaleY(1.2);
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25));
-    user-select: none;
-}
-.headline_text_excerpt {
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-    margin: 0px;
-    line-height: 1.5;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    color: #ffffff; 
-    font-family: 'Hei_W5', sans-serif; /*若無法使用則使用 sans-serif 作為後備字體 */
-    transform: scaleX(1) scaleY(1.15);
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
-    overflow: hidden; /* 超出部分隱藏 */
-    text-overflow: ellipsis; /* 使用...代表被隱藏的部分 */
-    user-select: none;
-}
-.headline_text_cut {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-#title{
-    font-size: 50px;
-    letter-spacing: 0px; /* 字間距為 16pt */
-    color: #1E1E1E;
-    font-family: 'Minion', sans-serif; /*若無法使用則使用 sans-serif 作為後備字體 */
-    transform: scaleX(1) scaleY(1.2);
-    user-select: none;
-    cursor: help;
-}
-.top_logo_border {
-    margin: 0px 30px 0px 30px;
-}
-.top_list_border {
-    margin: 0px 30px 0px 30px;
-    cursor: pointer;
-    position: relative;
-    top: 3.5px;
-}
-.list_text_CH {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 12px; 
-    letter-spacing: 6px; /* 字間距為 16pt */
-    color: #1E1E1E; 
-    font-family: 'Ming_W7', sans-serif; /*若無法使用則使用 sans-serif 作為後備字體 */
-    transform: scaleX(1) scaleY(1.4);
-}
-.list_text_EN {
-    margin-top: 10px;
-    margin-bottom: 7px;
-    font-size: 11px; 
-    color: #A2CE00; 
-    font-family: 'Hei_W7', sans-serif; /*若無法使用則使用 sans-serif 作為後備字體 */
-    transform: scaleX(1) scaleY(1);
-}
-@media (max-width: 1000px){
-    .main_space_style{
-        width: 100%;
+
+
+
+@media (min-width:720px){
+    .article_pic{
+        height: 450px
     }
-    .top_space_style{
-        height: 100px;
-    }
-    .headline_space_style{
-        border-radius: 20px;
-    }
+
 }
-@media (max-width: 780px){
-    .top_list_border{
-        display: none;
-    }
-    .list_text_CH{
-        display: none;
-    }
-    .list_text_EN{
-        display: none;
-    }
-    .top_logo_border {
-        margin-left: 0px ;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}
-@font-face {
-    font-family: 'Ming_W5';
-    src: url('font/DFMingStd-W5.otf') format('opentype');
-}
+
+
+
 @font-face {
     font-family: 'Ming_W7';
     src: url('font/DFMingStd-W7.otf') format('opentype');
 }
+
 @font-face {
-    font-family: 'Ming_W9';
-    src: url('font/DFMingStd-W9.otf') format('opentype');
+    font-family: 'Ming_W5';
+    src: url('font/DFMingStd-W5.otf') format('opentype');
 }
-@font-face {
-    font-family: 'Ming_W12';
-    src: url('font/DFMingStd-W12.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Hei_W5';
-    src: url('font/DFHeiStd-W5.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Hei_W7';
-    src: url('font/DFHeiStd-W7.otf') format('opentype');
-}
+
 @font-face {
     font-family: 'Minion';
     src: url('font/Minion-Variable-Concept.otf') format('opentype');
