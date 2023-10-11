@@ -49,10 +49,10 @@ body{
 
 .article{
     margin: 0 auto;
+    margin-right: 50px;
     padding: 0 auto;
     margin-bottom: 30px;
     width: 100%;
-    /* height: 350px; */
 }
 
 .article_pic{
@@ -102,12 +102,46 @@ body{
 
 
 
-@media (min-width:380px){
+@media (min-width:500px){
     .article_pic{
-        height: 450px
+        height: 350px
     }
+
 }
 
+@media (min-width: 720px){
+    #headline_space{
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0 auto;
+        width: 80vw;
+        height: 550px;
+        display: flex;
+        background-color: orange;
+    }
+    #article_space{
+        margin: 0 auto;
+        padding: 0 auto;
+        margin-top: 50px;
+        width: 80vw;
+        display:flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        /* background-color: blue; */
+    }
+    .article{
+        margin: 0 auto;
+        /* margin-right: 25px; */
+        /* margin-left: 25px; */
+        flex-basis: calc(30%);
+        padding: 0 auto;
+        margin-bottom: 30px;
+        width: 30%;
+    }
+    .article_pic{
+        height: 150px;
+    }
+}
 
 
 @font-face {
