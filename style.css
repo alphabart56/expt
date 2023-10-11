@@ -82,7 +82,7 @@ body{
     margin-left: 5px;
     margin-right: 5px;
     width: 100%;
-    font-size: 10pt;
+    font-size: 13px;
     font-family: 'Ming_W5', sans-serif;
     color: rgb(100, 100, 100);
     line-height: 18pt;
@@ -95,7 +95,7 @@ body{
     margin-left: 5px;
     margin-right: 5px;
     width: 100%;
-    font-size: 10pt;
+    font-size: 13px;
     font-family: 'Ming_W5', sans-serif;
     color: rgb(100, 100, 100);
 }
@@ -106,10 +106,6 @@ body{
     .article_pic{
         height: 200px
     }
-    .article_topic{
-        font-size: 20vw;
-    }
-
 }
 
 
