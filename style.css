@@ -102,7 +102,7 @@ body{
 
 
 
-@media (min-width:900px){
+@media (min-width:375px){
     .article_pic{
         height: 600px
     }
