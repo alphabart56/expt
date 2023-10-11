@@ -104,10 +104,10 @@ body{
 
 @media (min-width:380px){
     .article_pic{
-        height: 600px
+        height: 200px
     }
     .article_topic{
-        font-size: 18px;
+        font-size: 20vw;
     }
 
 }
