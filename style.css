@@ -71,7 +71,7 @@ body{
     margin-left: 5px;
     padding: 0 auto;
     width: 100%;
-    font-size: 18px;
+    font-size: 14pt;
     font-family: 'Ming_W7', sans-serif;
 }
 
@@ -107,7 +107,7 @@ body{
         height: 600px
     }
     .article_topic{
-        font-size: 1.5rem;
+        font-size: 10vw;
     }
 
 }
