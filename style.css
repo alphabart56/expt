@@ -102,14 +102,7 @@ body{
 
 
 
-@media (min-width:500px){
-    .article_pic{
-        height: 350px
-    }
-
-}
-
-@media (min-width: 1100px){
+@media (min-width: 700px){
     #headline_space{
         margin: 0 auto;
         margin-top: 50px;
